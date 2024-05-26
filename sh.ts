@@ -12,7 +12,7 @@ pathFinder.set("sh", {
 });
 
 /**
- * File extension for PowerShell scripts.
+ * File extension for sh scripts.
  */
 export const SH_EXT = ".sh";
 
@@ -21,8 +21,8 @@ export const SH_EXT = ".sh";
  */
 export class ShCommand extends ShellCommand {
     /**
-     * Creates a new instance of the `PwshCommand` class.
-     * @param script The PowerShell script to execute.
+     * Creates a new instance of the `ShCommand` class.
+     * @param script The sh script to execute.
      * @param options The options for the shell command.
      */
     constructor(script: string, options?: ShellCommandOptions) {
@@ -30,15 +30,15 @@ export class ShCommand extends ShellCommand {
     }
 
     /**
-     * Gets the file extension associated with PowerShell scripts.
+     * Gets the file extension associated with sh scripts.
      */
     get ext(): string {
         return SH_EXT;
     }
 
     /**
-     * Gets the shell arguments for executing the PowerShell script.
-     * @param script The PowerShell script to execute.
+     * Gets the shell arguments for executing the sh script.
+     * @param script The sh script to execute.
      * @param isFile Specifies whether the script is a file or a command.
      * @returns The shell arguments for executing the script.
      */
@@ -58,7 +58,7 @@ export class ShCommand extends ShellCommand {
 /**
  * Executes a sh script using the ShCommand class.
  *
- * @param script - The PowerShell script to execute.
+ * @param script - The sh script to execute.
  * @param options - Optional options for the shell command.
  * @returns A new instance of the ShCommand class.
  */

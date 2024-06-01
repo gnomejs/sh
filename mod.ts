@@ -26,4 +26,4 @@
 ```
  * @module
  */
-export * from "./sh.ts";
+export * from "./cli.ts";
